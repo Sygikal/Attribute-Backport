@@ -28,7 +28,7 @@ public class AttributeBackportMixinPlugin implements IMixinConfigPlugin {
                 || mixinClassName.contains("ServerPlayerInteractionManagerMixin") || mixinClassName.contains("ScreenHandlerMixin")
                 || mixinClassName.contains("ReachPlayerEntityMixin") || mixinClassName.contains("ItemMixin")
                 || mixinClassName.contains("InventoryMixin") || mixinClassName.contains("GameRendererMixin")
-                || mixinClassName.contains("ForgingScreenHandlerMixin") || mixinClassName.contains("ClientPlayerInteractionManagerMixin")) && (FabricLoader.getInstance().isModLoaded("zenith_attributes") || FabricLoader.getInstance().isModLoaded("reach-entity-attributes"))) {
+                || mixinClassName.contains("ForgingScreenHandlerMixin") || mixinClassName.contains("ClientPlayerInteractionManagerMixin")) && (FabricLoader.getInstance().isModLoaded("reach-entity-attributes"))) {
             return false;
         }
         return true;
