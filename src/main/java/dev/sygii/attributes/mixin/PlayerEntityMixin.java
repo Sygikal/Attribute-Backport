@@ -37,8 +37,6 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             require = 1, allow = 1, at = @At("RETURN"))
     private static void addAttributes(final CallbackInfoReturnable<DefaultAttributeContainer.Builder> info) {
         info.getReturnValue().add(AttributeBackport.PLAYER_BLOCK_BREAK_SPEED)
-                .add(AttributeBackport.PLAYER_BLOCK_INTERACTION_RANGE)
-                .add(AttributeBackport.PLAYER_ENTITY_INTERACTION_RANGE)
                 .add(AttributeBackport.PLAYER_SUBMERGED_MINING_SPEED)
                 .add(AttributeBackport.PLAYER_MINING_EFFICIENCY)
                 .add(AttributeBackport.PLAYER_SNEAKING_SPEED)
@@ -108,11 +106,5 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     private int getReachAccountingOpenCount(final ViewerCountManager manager, final World world, final BlockPos pos) {
         return ReachUtil.getPlayersWithinReach(this::isPlayerViewing, world, pos.getX(), pos.getY(), pos.getZ(), 5.0).size();
     }*/
-
-
-    @ModifyConstant(method = "attack(Lnet/minecraft/entity/Entity;)V", constant = @Constant(doubleValue = 9.0))
-    private double getActualAttackRange(final double attackRange) {
-        return ReachUtil.getSquaredAttackRange(this, attackRange);
-    }
 
 }

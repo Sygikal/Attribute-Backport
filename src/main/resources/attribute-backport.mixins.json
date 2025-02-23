@@ -2,6 +2,7 @@
   "required": true,
   "package": "dev.sygii.attributes.mixin",
   "compatibilityLevel": "JAVA_17",
+  "plugin": "dev.sygii.attributes.AttributeBackportMixinPlugin",
   "mixins": [
     "EntityMixin",
     "ForgingScreenHandlerMixin",
@@ -9,6 +10,7 @@
     "ItemMixin",
     "LivingEntityMixin",
     "PlayerEntityMixin",
+    "ReachPlayerEntityMixin",
     "ScreenHandlerMixin",
     "ServerPlayerInteractionManagerMixin",
     "ServerPlayNetworkHandler1Mixin",
