@@ -42,6 +42,9 @@ public class AttributeBackport implements ModInitializer {
 	public static final EntityAttribute PLAYER_SWEEPING_DAMAGE_RATIO = register(
 			"player.sweeping_damage_ratio", (new ClampedEntityAttribute("attribute.name.player.sweeping_damage_ratio", 0.0, 0.0, 1.0)).setTracked(true));
 
+	public static final EntityAttribute GENERIC_EXPLOSION_KNOCKBACK_RESISTANCE = register(
+			"generic.explosion_knockback_resistance", (new ClampedEntityAttribute("attribute.name.generic.explosion_knockback_resistance", 0.0, 0.0, 1.0)).setTracked(true));
+
 	@Override
 	public void onInitialize() {
 	}

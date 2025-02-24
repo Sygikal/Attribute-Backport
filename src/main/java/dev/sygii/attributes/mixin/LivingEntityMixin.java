@@ -27,7 +27,8 @@ public abstract class LivingEntityMixin extends Entity {
             require = 1, allow = 1, at = @At("RETURN"))
     private static void addAttributes(final CallbackInfoReturnable<DefaultAttributeContainer.Builder> info) {
         info.getReturnValue().add(AttributeBackport.GENERIC_BURNING_TIME)
-                .add(AttributeBackport.GENERIC_OXYGEN_BONUS);
+                .add(AttributeBackport.GENERIC_OXYGEN_BONUS)
+                .add(AttributeBackport.GENERIC_EXPLOSION_KNOCKBACK_RESISTANCE);
     }
 
 
