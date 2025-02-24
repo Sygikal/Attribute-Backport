@@ -1,4 +1,4 @@
-package dev.sygii.attributes.mixin;
+package dev.sygii.attributes.mixin.reach;
 
 import dev.sygii.attributes.util.ReachUtil;
 import net.minecraft.entity.Entity;

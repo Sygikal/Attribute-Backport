@@ -5,25 +5,26 @@
   "plugin": "dev.sygii.attributes.AttributeBackportMixinPlugin",
   "mixins": [
     "EntityMixin",
-    "ForgingScreenHandlerMixin",
-    "InventoryMixin",
-    "ItemMixin",
+    "ExplosionMixin",
     "LivingEntityMixin",
     "PlayerEntityMixin",
-    "ReachPlayerEntityMixin",
-    "ScreenHandlerMixin",
-    "ServerPlayerInteractionManagerMixin",
-    "ServerPlayNetworkHandler1Mixin",
-    "ServerPlayNetworkHandlerMixin",
-    "VehicleInventoryMixin",
-    "ViewerCountManagerMixin"
+    "reach.ForgingScreenHandlerMixin",
+    "reach.InventoryMixin",
+    "reach.ItemMixin",
+    "reach.ReachPlayerEntityMixin",
+    "reach.ScreenHandlerMixin",
+    "reach.ServerPlayerInteractionManagerMixin",
+    "reach.ServerPlayNetworkHandler1Mixin",
+    "reach.ServerPlayNetworkHandlerMixin",
+    "reach.VehicleInventoryMixin",
+    "reach.ViewerCountManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "client": [
     "ClientPlayerEntityMixin",
-    "ClientPlayerInteractionManagerMixin",
-    "GameRendererMixin"
+    "reach.ClientPlayerInteractionManagerMixin",
+    "reach.GameRendererMixin"
   ]
 }

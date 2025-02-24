@@ -1,7 +1,6 @@
-package dev.sygii.attributes.mixin;
+package dev.sygii.attributes.mixin.reach;
 
 import dev.sygii.attributes.util.ReachUtil;
-import net.minecraft.network.listener.ServerPlayPacketListener;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.objectweb.asm.Opcodes;

@@ -1,10 +1,7 @@
-package dev.sygii.attributes.mixin;
+package dev.sygii.attributes.mixin.reach;
 
-import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
-import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import dev.sygii.attributes.AttributeBackport;
 import dev.sygii.attributes.util.ReachUtil;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
