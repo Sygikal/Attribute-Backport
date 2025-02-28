@@ -45,11 +45,14 @@ public class AttributeBackport implements ModInitializer {
 	public static final EntityAttribute GENERIC_EXPLOSION_KNOCKBACK_RESISTANCE = register(
 			"generic.explosion_knockback_resistance", (new ClampedEntityAttribute("attribute.name.generic.explosion_knockback_resistance", 0.0, 0.0, 1.0)).setTracked(true));
 
+	public static final EntityAttribute GENERIC_WATER_MOVEMENT_EFFICIENCY = register(
+			"generic.water_movement_efficiency", (new ClampedEntityAttribute("attribute.name.generic.water_movement_efficiency", 0.0, 0.0, 1.0)).setTracked(true));
+
 	@Override
 	public void onInitialize() {
 	}
 
 	private static EntityAttribute register(String id, EntityAttribute attribute) {
-		return (EntityAttribute) Registry.register(Registries.ATTRIBUTE, Identifier.of(MOD_ID, id), attribute);
+		return Registry.register(Registries.ATTRIBUTE, Identifier.of(MOD_ID, id), attribute);
 	}
 }
