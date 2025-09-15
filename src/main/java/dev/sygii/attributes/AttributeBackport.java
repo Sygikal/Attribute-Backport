@@ -48,6 +48,9 @@ public class AttributeBackport implements ModInitializer {
 	public static final EntityAttribute GENERIC_WATER_MOVEMENT_EFFICIENCY = register(
 			"generic.water_movement_efficiency", (new ClampedEntityAttribute("attribute.name.generic.water_movement_efficiency", 0.0, 0.0, 1.0)).setTracked(true));
 
+	/*public static final EntityAttribute GENERIC_MAX_ABSORPTION = register(
+			"generic.max_absorption", (new ClampedEntityAttribute("attribute.name.generic.max_absorption", (double)0.0F, (double)0.0F, (double)2048.0F)).setTracked(true));
+*/
 	@Override
 	public void onInitialize() {
 	}
