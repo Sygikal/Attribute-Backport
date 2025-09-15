@@ -21,7 +21,6 @@ public interface InventoryMixin {
             at = @At(shift = At.Shift.BEFORE, value = "INVOKE", target = "Lnet/minecraft/util/math/BlockPos;getX()I"),
             locals = LocalCapture.CAPTURE_FAILHARD, cancellable = true)
     private static void checkWithinActualReach(final BlockEntity blockEntity, final PlayerEntity player, final int reachDistance, final CallbackInfoReturnable<Boolean> cir, final World world, final BlockPos pos) {
-        System.out.println(reachDistance);
         if (player.squaredDistanceTo(pos.toCenterPos()) <= ReachUtil.getSquaredReachDistanceBonus2(player, reachDistance * reachDistance)) {
             cir.setReturnValue(true);
         }
